@@ -1,0 +1,13 @@
+<h1>Company List</h1>
+
+<LinkTo @route="home">Home</LinkTo>
+
+<p>
+  Companies ({{@model.length}}):
+</p>
+
+<ul>
+  {{#each @model as |company|}}
+    <li>{{company.name}}</li>
+  {{/each}}
+</ul>
